@@ -1,4 +1,4 @@
 # BET GAME
 
 - This is a simple bet game bulit with Javascript. 
-- You will -never- get money back from casino!
+- You will *NEVER* get money back from casino!
