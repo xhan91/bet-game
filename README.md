@@ -1,4 +1,4 @@
-# BET GAME
+# [BET GAME](https://bet-game.herokuapp.com/)
 
 - This is a simple bet game bulit with Javascript. 
-- You will *NEVER* get money back from casino!
+- You will __NEVER__ get money back from casino!
