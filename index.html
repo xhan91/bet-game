@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bet the Number!</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="bet.css">
+    <script src='jquery-3.1.0.js'></script>
+    <script src='bet.js'></script>
+  </head>
+  <body>
+    <div class="hero is-info is-bold is-fullheight">
+      <div class="hero-body">
+        <div id="start-menu" class="my-container">
+          <div class="screen is-margin">
+            Rule: You have a starting bankroll of $100. Bet a number from 1 to 10 each round, you can choose wether bet $5 or $10. You get awarded when you hit the number, no lose when you hit +/- 1 number and lose your money else.
+          </div>
+          <button id="btn-start" class="button is-large is-success">Game Start</button>
+        </div>
+        <div id="playground" class="my-container">
+          <label class="label">Your Bankroll: <span id="bankroll">100</span></label>
+          <div id="screen" class="screen is-margin">Ready to win?</div>
+          <label class="label">
+            Money amount of this bet
+          </label>
+          <select id="amount" class="input">
+            <option value="5">$5</option>
+            <option value="10">$10</option>
+          </select>
+          <label class="label">
+            Bet number
+          </label>
+          <input id="num" type="number" min="1" max="10" class="input" value="5">
+          <br>
+          <button id="btn-cashout" class="button is-large is-danger is-margin is-pulled-left">Cash out!</button>
+          <button id="btn-bet" class="button is-large is-success is-margin is-pulled-right">BET!</button>
+        </div>
+        <div id="gameover" class="my-container">
+          <div id="gameover-screen" class="screen is-gameover"></div>
+          <button id="btn-restart" class="button is-large is-success is-margin"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

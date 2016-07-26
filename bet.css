@@ -1,0 +1,25 @@
+#gameover {
+  display: none;
+}
+
+#playground {
+  display: none;
+}
+
+.my-container {
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+
+.screen {
+  background-color: lightblue; 
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.is-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
