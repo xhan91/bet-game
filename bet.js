@@ -12,19 +12,19 @@ function init() {
 
 function betOn(amount, num) {
     var res = Math.floor(Math.random() * 10) + 1;
-    var string = "The winning number is " + res + ",";
+    var string = "The winning number is " + res + ".";
     switch(num){
         case res:
             bankroll += amount;
-            string += "You Win!";
+            string += " You Win!";
             break;
         case res + 1:
         case res - 1:
-            string += "Almost man!";
+            string += " Almost man!";
             break;
         default:
             bankroll -= amount;
-            string += "Oh you lose, give it one more try!";
+            string += " Oh you lose, give it one more try!";
             break;
     }
     return string;
