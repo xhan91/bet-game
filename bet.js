@@ -46,12 +46,14 @@ function showGameover() {
 
 // Jquery part
 $(document).ready(function(){
+    // Press start button to start game
     $('#start-menu').on('click', '#btn-start', function(){
         $('#start-menu').hide();
         $('#playground').show();
         start();
     });
 
+    // Press bet button to bet
     $('#playground').on('click', '#btn-bet', function(){
         if (gameover)
             return;
@@ -74,12 +76,15 @@ $(document).ready(function(){
         }
     })
 
+    // Press cash out button to cash out
     $('#playground').on('click', '#btn-cashout', function(){
         showGameover();
     });
 
+    // Press restart button to restart the game
     $('#gameover').on('click', '#btn-restart', function(){
         start();
+        $('#bankroll').text(bankroll);
         $('#playground').show();
         $('#gameover').hide();
     });
